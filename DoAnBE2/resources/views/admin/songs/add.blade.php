@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <i class='bx bxs-volume-full'></i>
-                    <a href="{{ route('admin.songs.add') }}">Quản lý bài hát</a>
+                    <a href="{{ route('admin.songs.list') }}">Quản lý bài hát</a>
                 </li>
                 <li>
                     <i class='bx bxs-album'></i>
@@ -122,7 +122,55 @@
 
         </header>
         <!--content-->
-        <h1 style="color: #5773ff">day la trang add song</h1>
+        <section class="add-song">
+            <h2 class="title">Thêm bài hát</h2>
+            <p class="subtitle">Quản lý bài hát / Thêm bài hát</p>
+            <p class="note">Lưu ý: Những trường hợp (*) là trường hợp bắt buộc.</p>
+
+            <form action="" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group">
+                    <label for="tenbaihat">Tên bài hát (*)</label>
+                    <input type="text" id="tenbaihat" name="tenbaihat" placeholder="Nhập tên bài hát" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nghesi">Nghệ sĩ (*)</label>
+                    <select id="nghesi" name="nghesi" required>
+                        <option value="">-- Chọn nghệ sĩ --</option>
+                        <option value="1">Jack 97</option>
+                        <option value="2">Jisoo</option>
+                        <option value="3">Sơn Tùng MTP</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="theloai">Thể loại (*)</label>
+                    <select id="theloai" name="theloai" required>
+                        <option value="">-- Chọn thể loại --</option>
+                        <option value="nhactre">Nhạc trẻ</option>
+                        <option value="kpop">Kpop</option>
+                        <option value="rap">Rap Việt</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="file_amthanh">Tệp file âm thanh (*)</label>
+                    <input type="file" id="file_amthanh" name="file_amthanh" accept="audio/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="anhdaidien">Tệp file ảnh đại diện</label>
+                    <input type="file" id="anhdaidien" name="anhdaidien" accept="image/*">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn primary">Thêm bài hát mới</button>
+                    <button type="reset" class="btn">Hủy</button>
+                </div>
+            </form>
+        </section>
+
 
     </main>
 

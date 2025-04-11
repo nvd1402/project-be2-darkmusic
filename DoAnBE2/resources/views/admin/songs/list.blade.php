@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <i class='bx bxs-volume-full'></i>
-                    <a href="{{ route('admin.songs.add') }}">Quản lý bài hát</a>
+                    <a href="{{ route('admin.songs.list') }}">Quản lý bài hát</a>
                 </li>
                 <li>
                     <i class='bx bxs-album'></i>
@@ -122,7 +122,55 @@
 
         </header>
         <!--content-->
-        <h1 style="color: #5773ff">day la trang list</h1>
+        <section class="song-list">
+            <h2 class="title">Danh sách bài hát</h2>
+            <div class="add-btn">
+                <a href="{{ route('admin.songs.add') }}">Thêm mới</a>
+            </div>
+
+            <table class="song-table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên bài hát</th>
+                    <th>Nghệ sĩ</th>
+                    <th>Thể loại</th>
+                    <th>Avatar</th>
+                    <th>File âm thanh</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thiên Lý Ơi</td>
+                    <td>Jack 97</td>
+                    <td>Nhạc trẻ</td>
+                    <td><img class="avatar" src="" alt="avatar"></td>
+                    <td>thienlyoi.mp3</td>
+                    <td>
+                        <a href="#" class="btn edit">Sửa</a>
+                        <a href="#" class="btn delete">Xóa</a>
+                        <span class="status active">Hoạt động</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Flower</td>
+                    <td>Jisoo</td>
+                    <td>Kpop</td>
+                    <td><img class="avatar" src="" alt="avatar"></td>
+                    <td>flower.mp3</td>
+                    <td>
+                        <a href="#" class="btn edit">Sửa</a>
+                        <a href="#" class="btn delete">Xóa</a>
+                        <span class="status disabled">Vô hiệu hóa</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
 
     </main>
 

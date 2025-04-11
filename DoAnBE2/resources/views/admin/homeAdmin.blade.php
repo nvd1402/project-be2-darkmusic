@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <i class='bx bxs-volume-full'></i>
-                    <a href="{{ route('admin.songs.add') }}">Quản lý bài hát</a>
+                    <a href="{{ route('admin.songs.list') }}">Quản lý bài hát</a>
                 </li>
                 <li>
                     <i class='bx bxs-album'></i>
