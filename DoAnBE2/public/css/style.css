@@ -13,95 +13,7 @@
     color: #919191;
     font-weight: bold;
 }
-.container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 1fr 100px;
 
-    gap: 1px 1px;
-    grid-auto-flow: row;
-}
-
-.item2:nth-child(1) {
-    margin-right: 10px;
-
-    border-radius: 10px;
-    grid-row: 2 / 6;
-    background-color: white;
-    grid-column: 1 / 4;
-}
-
-.item2:nth-child(2) {
-    margin-right: 10px;
-    border-radius: 10px;
-    grid-row: 2 / 6;
-    grid-column: 10 / 13;
-    background-color: bisque;
-
-}
-
-.item2:nth-child(3) {
-    margin-right: 10px;
-    border-radius: 10px;
-    grid-column: 4 / 10;
-    background-color: bisque;
-
-    grid-row: 6 / 4;
-}
-
-.item2:nth-child(4) {
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    grid-area: 2 / 6 / 3 / 7;
-    background-color: bisque;
-
-}
-
-.item2:nth-child(5) {
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    grid-area: 2 / 7 / 3 / 8;
-    background-color: bisque;
-
-}
-
-.item2:nth-child(6) {
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    grid-area: 2 / 8 / 3 / 9;
-    background-color: bisque;
-
-}
-
-.item2:nth-child(7) {
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    grid-area: 2 / 5 / 3 / 6;
-    background-color: bisque;
-
-}
-
-.item2:nth-child(8) {
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    grid-area: 2 / 4 / 3 / 5;
-    background-color: bisque;
-
-}
-
-.item2:nth-child(9) {
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    grid-area: 2 / 9 / 3 / 10;
-    background-color: bisque;
-
-}
 .nameLogo{
     font-size: 30px;
     font-weight:bold;
@@ -636,7 +548,7 @@ body{
 }
 
 @media screen and (max-width: 1400px) {
-    
+
     .container .sidebar .playing .bottom p{
         font-size: 10px;
     }
@@ -678,7 +590,7 @@ body{
 }
 
 @media screen and (max-width: 1200px) {
-    
+
     .container main header .search{
         width: 40%;
     }
@@ -709,7 +621,7 @@ body{
     .container main .playlist .music-list{
         width: 100%;
     }
-    
+
     .container .right-section .music-player{
         height: 88%;
     }
@@ -751,7 +663,7 @@ body{
 }
 
 @media screen and (max-width: 992px) {
-    
+
     .container{
         grid-template-columns: 3fr 2fr;
     }
@@ -786,7 +698,7 @@ body{
     .container main .playlist{
         margin-top: 40px;
     }
-    
+
     .container .right-section .music-player{
         height: 87%;
     }
@@ -812,7 +724,7 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .container{
         grid-template-columns: 1fr;
     }
